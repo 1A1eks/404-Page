@@ -70,15 +70,29 @@ a:hover {
 }
 
 #pic {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    animation: pic 5s infinite;
+    float: center;
+    align-content: center;
+    display: inline-block;
+    max-width: 225px;
+    height: 225px;
+    animation: pics 5s infinite;
+    animation: rotating 3s linear infinite;
+}
 
-@keyframes pic {
+@keyframes pics {
     50% {box-shadow: 10px 20px 30px blue;}
 }
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
+
+
 
 div {
     text-align: center;
